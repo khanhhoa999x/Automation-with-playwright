@@ -1,0 +1,21 @@
+{
+  "name": "automation-with-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanhhoa999x/Automation-with-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khanhhoa999x/Automation-with-playwright/issues"
+  },
+  "homepage": "https://github.com/khanhhoa999x/Automation-with-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.34.2"
+  }
+}
