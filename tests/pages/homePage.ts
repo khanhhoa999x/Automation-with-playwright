@@ -1,25 +1,22 @@
-import { test, expect } from "@playwright/test";
-import { Page } from "@playwright/test";
+import { expect, Locator, Page } from '@playwright/test';
 
-class homePage {
-    private page: Page;
-    private accountMenu;
-    private login;
+export class homePage {
+    readonly page: Page;
+    readonly accountMenu;
+    readonly loginLink;
 
-    constructor(page){
+    constructor(page: Page){
         this.page = page;
         this.accountMenu = page.locator("xpath=//span[contains(text(),'Account')]//parent::a");
-        this.login = page.locator("xpath=//div[@class='links']/ul/li/a[contains(text(),'Log In')]");
+        this.loginLink = page.locator("xpath=//div[@class='links']/ul/li/a[contains(text(),'Log In')]");
     };
 
     async Navigate_to_home_page() {
-        this.page.goto("http://live.techpanda.org/index.php/");
+        await this.page.goto("http://live.techpanda.org/index.php/");
     }
 
     async Navigate_to_login_page() {
-        this.accountMenu.click();
-        this.login.click();
+        await this.accountMenu.click();
+        await this.loginLink.click();
     }
 }
-
-export default homePage;
