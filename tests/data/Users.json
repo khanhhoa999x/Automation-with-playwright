@@ -1,0 +1,12 @@
+{
+    "validUser" : 
+        [{
+            "email": "khanhhoa@email.com",
+            "password": "Khanhhoa@12345678"
+        }],
+    "invalidUser" :
+        [{
+            "email": "invaliduser@email.com",
+            "password": "invalidpw@12345678"
+        }]
+}
