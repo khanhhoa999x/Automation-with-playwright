@@ -26,4 +26,10 @@ export class loginPage {
     async Click_login() {
         await this.loginBttn.click();
     }
+
+    async Login_with_valid_user(email, password) {
+        await this.Type_email(email);
+        await this.Type_password(password);
+        await this.Click_login();
+    }
 }

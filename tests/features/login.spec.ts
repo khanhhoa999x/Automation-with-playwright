@@ -11,8 +11,9 @@ validUserArray.forEach((user) => {
     const LoginPage = new loginPage(page);
     await HomePage.Navigate_to_home_page();
     await HomePage.Navigate_to_login_page();
-    await LoginPage.Type_email(user.email);
-    await LoginPage.Type_password(user.password);
-    await LoginPage.Click_login();
+    // await LoginPage.Type_email(user.email);
+    // await LoginPage.Type_password(user.password);
+    // await LoginPage.Click_login();
+    await LoginPage.Login_with_valid_user(user.email, user.password);
   });
 });
